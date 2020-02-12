@@ -8,11 +8,11 @@ void kvadrat(int a, int b, int c)
     if (d > 0) {
         x1 = (-b + sqrt(d)) / (2 * a);
         x2 = (-b - sqrt(d)) / (2 * a);
-        printf("Корни уравнения: %f %f \n", x1 , x2);
+        printf("Корни уравнения: %lf %lf \n", x1 , x2);
     }
     if (d == 0.0) {
         x1 = -b / (2 * a);
-        printf("Корни уравнения: %f \n", x1);
+        printf("Корни уравнения: %lf \n", x1);
     }
     if (d < 0) {
         printf("Вещественных корней нет\n");
