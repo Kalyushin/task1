@@ -6,6 +6,6 @@
 int main()
 {
     printf("Hello World!\n");
-    kvadrat (1 , 5, 1);
+    kvadrat (1 , 6, 1);
     return myfunc(2);
 }
