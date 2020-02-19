@@ -1,20 +1,23 @@
 #include <stdio.h>
 #include <math.h>
+#include "myfunc.h"
 
-void kvadrat(int a, int b, int c)
+roots kvadrat(int a, int b, int c)
 {
-    double x1, x2, d;
+    double d;
+    roots answers;
     d = b * b - 4 * a * c;
     if (d > 0) {
-        x1 = (-b + sqrt(d)) / (2 * a);
-        x2 = (-b - sqrt(d)) / (2 * a);
-        printf("Корни уравнения: %lf %lf \n", x1 , x2);
+        answers.count = 2;
+        answers.x1 = (-b + sqrt(d)) / (2 * a);
+        answers.x2 = (-b - sqrt(d)) / (2 * a);
+        return answers;
     }
     if (d == 0.0) {
-        x1 = -b / (2 * a);
-        printf("Корни уравнения: %lf \n", x1);
+        answers.count = 1;
+        answers.x1 = -b / (2 * a);
+        return answers;
     }
-    if (d < 0) {
-        printf("Вещественных корней нет\n");
-    }
+    answers.count = 0;
+    return answers;
 }
