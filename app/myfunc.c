@@ -1,5 +1,6 @@
 
 #include "myfunc.h"
+#include "kvadrat.c"
 
 int myfunc(int b) {
     return b+4;

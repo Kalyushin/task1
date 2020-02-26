@@ -15,7 +15,7 @@ roots kvadrat(int a, int b, int c)
     }
     if (d == 0.0) {
         answers.count = 1;
-        answers.x1 = -b / (2 * a);
+        answers.x1 = -(double)b / (2 * (double)a);
         return answers;
     }
     answers.count = 0;
