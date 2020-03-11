@@ -11,6 +11,6 @@ int myfunc(int b);
 
 int fibonachi(int num);
 
-roots kvadrat (int a, int b, int c);
+roots kvadrat (double a, double b, double c);
 
 #endif // MYFUNC_H

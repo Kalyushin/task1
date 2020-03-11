@@ -6,7 +6,13 @@ int main()
 {
     printf("Hello World!\n");
     roots answer;
-    answer = kvadrat (1 , 6, 1);
+    printf ("Введите коэффициенты \n");
+    double a, b, c;
+    scanf("%lf %lf %lf", &a, &b, &c);
+    answer = kvadrat (a, b, c);
+    if (answer.count == -1){
+        printf("Ошибка! Вы не ввели коэфиценты");
+    }
     if (answer.count == 0) {
         printf("Корней нет");
     }
