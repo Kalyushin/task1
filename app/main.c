@@ -8,7 +8,9 @@ int main()
     roots answer;
     printf ("Введите коэффициенты \n");
     double a, b, c;
-    scanf("%lf %lf %lf", &a, &b, &c);
+    int code = scanf("%lf %lf %lf", &a, &b, &c);
+    if (code < 0) 
+        return -1;
     answer = kvadrat (a, b, c);
     if (answer.count == -1){
         printf("Ошибка! Вы не ввели коэфиценты");
