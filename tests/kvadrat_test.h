@@ -22,7 +22,7 @@ TEST(kvadratTest, root2) {
     ASSERT_NEAR(kvadrat(1,7,3).x2, -6.5414, 0.001);
 }
 TEST(kvadratTest, negative_NULL) {
-    ASSERT_EQ(kvadrat(0,0,0).count, 0);
+    ASSERT_EQ(kvadrat(0,0,0).count, -1);
 }
 
 TEST(kvadratTest, negative_NULL_A) {
