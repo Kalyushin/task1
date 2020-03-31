@@ -1,5 +1,5 @@
-#ifndef KVADRAT_H
-#define KVADRAT_H
+#ifndef KVADRATS_H
+#define KVADRATS_H
 
 typedef struct _roots{
        int count;
@@ -9,4 +9,4 @@ typedef struct _roots{
 
 roots kvadrat (double a, double b, double c);
 
-#endif // KVADRAT_H
+#endif // KVADRATS_H
