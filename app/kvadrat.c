@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <math.h>
-#include "myfunc.h"
+#include "kvadrat.h"
 
 roots kvadrat(double a, double b, double c)
 {
