@@ -4,7 +4,7 @@
 #include <gtest/gtest.h>
 
 extern "C" {
-#include "myfunc.h"
+#include "kvadrat.h"
 }
 
 TEST(kvadratTest, root0) {
