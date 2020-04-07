@@ -6,7 +6,7 @@ before_install:
 
 addons:
   sonarcloud:
-    organization: "kalyushin"
+    organization: "Kalyushin-github"
 
 script:
   - qmake
